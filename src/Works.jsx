@@ -1,6 +1,5 @@
 import React from "react";
-import ReactDom from "react-dom";
-import startBirdDefense  from "../projects/birdDefense/birdDefense";
+import startBirdDefense  from "./projects/birdDefense/birdDefense";
 
 var demoSpaceCreated = false;
 
@@ -41,14 +40,14 @@ function creatDemoSpace(event, subject) {
 }
 
 const projects = [
-    {
-        id: "MazeSolver",
-        name: "Maze Solver",
-        description: "Create a maze and then solve it with a bunch of bouncing balls.",
-        category: "Java Appliet",
-        imgSrc: "images/maze-solver.png",
-        appStarter: function runMazeSolver(event) { creatDemoSpace(event, "Maze Solver"); }
-    },
+    // {
+    //     id: "MazeSolver",
+    //     name: "Maze Solver",
+    //     description: "Create a maze and then solve it with a bunch of bouncing balls.",
+    //     category: "Java Appliet",
+    //     imgSrc: "images/maze-solver.png",
+    //     appStarter: function runMazeSolver(event) { creatDemoSpace(event, "Maze Solver"); }
+    // },
     {
         id: "RegressionCalculator",
         name: "Regression Calculator",
@@ -129,6 +128,7 @@ function CreateProject(proj) {
 
 function Works() {
     // data-animate-el doesn't work in <h2 />, <li />
+    console.log("works......");
     return (
         <div class="row works-portfolio">
             <div class="column lg-12" data-animate-block>
